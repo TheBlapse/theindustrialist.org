@@ -1,70 +1,70 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="The Industrialist">
-	<main>
-		<h1>The Industrialist</h1>
-        </main>
+  <main class="font-serif gradientbg min-h-screen w-full mx-auto">
+    <div
+      class="px-4 md:px-0 md:max-w-3xl w-full flex flex-col items-center mx-auto gap-4 py-24"
+    >
+      <h1 class="text-2xl md:text-3xl w-full font-medium">The Industrialist</h1>
+      <div class="text-sm md:text-base flex flex-col gap-y-4">
+        <p>
+          A journal to document the story and journey of the backbone of
+          India&rsquo;s economy &ndash; The Industrialists.
+        </p>
+        <p>
+          There might be eight-hundred-twelve interviews with Sam Altman or some
+          SaaS founder, but we can rarely find a really good interview with
+          someone from the heavy industries. Unlike the startup world, heavy
+          industry does not receive much attention, and nobody interviews
+          industrialists. These individuals hold vast amounts of heuristics and
+          knowledge about building successful businesses, understanding how
+          things work, and providing specific context about India.
+        </p>
+        <p>
+          The thing you are reading this on is a product of a factory. The thing
+          you are sitting on, again, is a product of a factory.
+        </p>
+        <p>
+          If we want to become a self-sustaining industrial state like America,
+          China, or Germany, then we need to accelerate. We need more smart
+          people pursuing this. We need to inspire the new generation to get
+          into manufacturing.
+        </p><p>
+          We plan to release interviews with industrialists and their factory
+          tours and journal them.
+        </p>
+        <p>
+          If you are an industrialist or happen to know anyone, we would really
+          appreciate you writing to us at <a
+            href="mailto:contact@theindustralist.org"
+            class="underline">contact@theindustralist.org.</a
+          >
+        </p>
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-                font-family: serif;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .nt-embed {
+    width: 1024px;
+    height: 1024px;
+  }
+  .nt-embed canvas {
+    width: 100%;
+    height: 100%;
+  }
+  .gradientbg {
+    background: linear-gradient(180deg, #fdf8ed 15.35%, #fff 100%);
+  }
 </style>
